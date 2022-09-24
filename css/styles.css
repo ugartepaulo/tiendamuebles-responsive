@@ -1,0 +1,227 @@
+body{
+    font-size:13px;
+    font-family: 'Rajdhani', sans-serif;    
+}
+img{
+    width: 100%;
+    display: block;
+}
+p{
+    margin: 0;
+}
+.text-center{
+    text-align: center;
+    margin: auto;
+}
+
+.mt{
+    margin-top: 3rem;
+}
+
+header h1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 2.5em;
+    text-align: center;
+}
+header h1 span{
+    color: #046eb9;
+}
+.menu{
+    background-color: #046eb9;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0.7rem;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.nav-menu a{
+    font-size: 1.1em;
+    color: white;
+    padding:0.3em;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+.nav-menu a:hover{
+    transform: scale(1.2)
+}
+.hero{
+    background-image: url('/img/principal.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25rem;
+}
+.grid-categorias{
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 1.5rem;
+}
+.grid-categorias div p{
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: block;
+    background-color:#046eb9;
+    color:white;
+    padding: 0.5rem;
+    border-radius: 0px 0px 30px 30px;
+}
+.grid-categorias div p:hover{
+    background-color:#80b500;
+    color:white;
+}
+
+.sobre-nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 2rem;
+}
+.sobre-nosotros-img{
+    background-image: url('/img/nosotros.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 18rem;
+}
+.sobre-nosotros-text{
+    background-color: #046eb9;
+    display:flex;
+    flex-direction: column;
+    color:white;
+}
+
+/**Listado de producto */
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+.producto:nth-child(1){
+    grid-column: 1/7;
+}
+.producto:nth-child(1) .texto-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto:nth-child(1) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(2){
+    grid-column: 1/7;
+}
+.producto:nth-child(2) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(3){
+    grid-column: 1/7;
+}
+.producto:nth-child(3) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(4){
+    grid-column: 1/7;
+    
+}
+.producto:nth-child(4) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(5){
+    grid-column: 1/7;
+    
+}
+.producto:nth-child(5) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+.producto:nth-child(6){
+    grid-column: 1/7;
+}
+.producto:nth-child(6) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(7){
+    grid-column: 1/7;
+}
+.producto:nth-child(7) img{
+    height: 17rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+ .producto{
+    background-color: #046eb9;
+ }
+ .texto-producto{
+    color: white;
+    padding: 1rem;
+ }
+ .precio{
+    font-family: 'Black Ops One', cursive;
+ }
+@media only screen and (min-width: 750px) {
+    body {
+      font-size: 16px;
+    }
+    .nav-menu{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .hero{
+        height: 40rem;
+    }
+    .grid-categorias{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sobre-nosotros{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+.producto:nth-child(1){
+    grid-column: 1/7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) .texto-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto:nth-child(1) img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+    .producto:nth-child(2){
+        grid-column: 1/4;
+    }
+    .producto:nth-child(3){
+        grid-column: 4/7;
+    }
+    .producto:nth-child(4){
+        grid-column: 1/3;
+    }
+    .producto:nth-child(5){
+        grid-column: 3/5;
+    }
+    .producto:nth-child(6){
+        grid-column: 5/7;
+    }
+  }
