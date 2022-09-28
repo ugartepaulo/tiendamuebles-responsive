@@ -104,11 +104,6 @@ header h1 span{
 .producto:nth-child(1){
     grid-column: 1/7;
 }
-.producto:nth-child(1) .texto-producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 .producto:nth-child(1) img{
     height: 17rem;
     width: 100%;
@@ -176,6 +171,50 @@ header h1 span{
  .precio{
     font-family: 'Black Ops One', cursive;
  }
+ .boton{
+    background-color: #80b500;
+    color: white;
+    text-decoration: none;
+    padding: 0.5em;
+    display: block;
+ }
+.texto-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.5em;
+}
+
+
+
+ .site-footer{
+    border-top: solid 1px rgb(196, 196, 196);
+    margin-top: 2em;
+ }
+ .site-footer p{
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: block;
+    text-align: center;
+ }
+ .grid-footer{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    text-align: center;
+ }
+ .nav-footer{
+    display: flex;
+    flex-direction: column;
+ }
+ .nav-footer a{
+    color: black;
+    padding:0.3em;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+ }
+ .nav-footer a:hover{
+    transform: scale(1.2)
+ }
 @media only screen and (min-width: 750px) {
     body {
       font-size: 16px;
@@ -194,21 +233,16 @@ header h1 span{
         grid-template-columns: 1fr 1fr;
     }
     
-.producto:nth-child(1){
-    grid-column: 1/7;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-.producto:nth-child(1) .texto-producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.producto:nth-child(1) img{
-    height: 25rem;
-    width: 100%;
-    object-fit: cover;
-}
+    .producto:nth-child(1){
+        grid-column: 1/7;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+    .producto:nth-child(1) img{
+        height: 25rem;
+        width: 100%;
+        object-fit: cover;
+    }
     .producto:nth-child(2){
         grid-column: 1/4;
     }
@@ -223,5 +257,9 @@ header h1 span{
     }
     .producto:nth-child(6){
         grid-column: 5/7;
+    }
+    .grid-footer{
+       grid-template-columns: repeat(3 , 1fr);
+       text-align: left;
     }
   }
